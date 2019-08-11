@@ -138,12 +138,14 @@ function gameLogic() {
 
                     console.log("Guesses Left: " + guessesLeft + "\n");
 
+                    //Print letters user alread guessed
                     console.log("Letters Guessed: " + incorrectLetters.join(" ") + "\n");
 
+                    // Guesses Left
                     if (guessesLeft > 0) {
                         gameLogic();
                     } else {
-                        console.log("You have lost\n");
+                        console.log("You have lose\n");
                     }
                     function wordCheck(key) {
                         wordCheckArray.push(key.guessed);
@@ -151,16 +153,14 @@ function gameLogic() {
 
                 }
 
-
-
-
-
             }
 
 
         });
     } else {
         console.log("You WinN!\n");
+
+        restartGame();
     }
     function completeCheck(key) {
         wordComplete.push(key.guessed);
@@ -172,7 +172,8 @@ function restartGame() {
     inquirer.prompt([
         {
             type: "list",
-            message: ["Play Again", "Exit"],
+            message: "Would you like to",
+            choices: ["Play Again", "Exit"],
             name: "restart"
         }
     ]).then(function (input) {

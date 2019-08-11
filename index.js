@@ -65,10 +65,11 @@ var unitedStates = [
 
 ];
 
-var randomIndex = Math.floor(Math.random() = unitedStates.length);
+var randomIndex = Math.floor(Math.random() * unitedStates.length);
 
 var randomWord = unitedStates[randomIndex];
 
+//Pass Random Word through Word Constructor
 var computerWord = new Word(randomWord);
 
 var requireNewWord = false;
@@ -81,7 +82,7 @@ var guessesLeft = 10
 
 function gameLogic() {
     if (requireNewWord) {
-        var randomIndex = Math.floor(Math.random() = unitedStates.length);
+        var randomIndex = Math.floor(Math.random() * unitedStates.length);
 
         var randomWord = unitedStates[randomIndex];
 
@@ -92,6 +93,8 @@ function gameLogic() {
     }
 
     var wordComplete = [];
+    computerWord.objectArray.forEach(completeCheck);
+
 
     if (wordComplete.includes(false)) {
         inquirer.prompt([
@@ -129,7 +132,9 @@ function gameLogic() {
                         correctLetters.push(input.userinput);
                     }
 
-                    computerWord();
+                    computerWord.log();
+
+                    //Print Guesses Left 
 
                     console.log("Guesses Left: " + guessesLeft + "\n");
 

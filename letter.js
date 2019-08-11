@@ -1,5 +1,5 @@
 // * **Letter.js**: Contains a constructor, Letter. This constructor should be able to either display an underlying character or a blank placeholder (such as an underscore), depending on whether or not the user has guessed the letter. That means the constructor should define:
-var Letter = function (value) {
+function Letter(value) {
     this.letter = value;
     this.guessed = false
 

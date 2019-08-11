@@ -145,7 +145,7 @@ function gameLogic() {
                     if (guessesLeft > 0) {
                         gameLogic();
                     } else {
-                        console.log("You have lose\n");
+                        console.log("Sorry you lose\n");
                     }
                     function wordCheck(key) {
                         wordCheckArray.push(key.guessed);
@@ -165,6 +165,7 @@ function gameLogic() {
     function completeCheck(key) {
         wordComplete.push(key.guessed);
     }
+
 
 }
 

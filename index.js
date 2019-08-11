@@ -64,7 +64,7 @@ var unitedStates = [
     "wyoming"
 
 ];
-
+//Pick Random index from UnitedStates array
 var randomIndex = Math.floor(Math.random() * unitedStates.length);
 
 var randomWord = unitedStates[randomIndex];
@@ -100,7 +100,7 @@ function gameLogic() {
         inquirer.prompt([
             {
                 type: "input",
-                message: "Select letter from A to Z",
+                message: "Select letter from a to z",
                 name: "userinput"
             }
         ]).then(function (input) {

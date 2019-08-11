@@ -9,11 +9,11 @@ function Word(answer) {
     }
 
     this.log = function () {
-        var answerLog = "";
+        var answerLog = " ";
         for (var i = 0; i < this.objectArray.length; i++) {
             answerLog += this.objectArray[i] + " ";
         }
-        console.log(answerLog + "\n---------------------------------------\n");
+        console.log(answerLog + "\n------------------------------\n");
     };
 
     this.userGuess = function (input) {

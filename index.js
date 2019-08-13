@@ -191,4 +191,3 @@ function restartGame() {
 }
 gameLogic();
 
-// module.exports = Index;

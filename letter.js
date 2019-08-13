@@ -3,7 +3,7 @@ function Letter(value) {
     this.letter = value;
     this.guessed = false
 
-    this.newString = function () {
+    this.toString = function () {
         if (this.letter === " ") {
             this.guessed = true;
             return " ";
@@ -17,9 +17,12 @@ function Letter(value) {
 
     };
 
+    //.test  .visible  .toString
+
     this.guess = function (guess) {
         if (guess === this.letter) {
             this.guessed = true;
+            return true;
         }
     };
 }

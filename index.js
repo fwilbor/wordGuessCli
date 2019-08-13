@@ -1,4 +1,4 @@
-var Word = require("./word");
+var Word = require("./Word");
 var inquirer = require("inquirer");
 
 
@@ -158,7 +158,7 @@ function gameLogic() {
 
         });
     } else {
-        console.log("You WinN!\n");
+        console.log("You WIN!\n");
 
         restartGame();
     }
@@ -191,4 +191,4 @@ function restartGame() {
 }
 gameLogic();
 
-
+// module.exports = Index;

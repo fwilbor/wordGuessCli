@@ -2,14 +2,14 @@
 A Word Guess Command-Line Game using Constructor Functions
 
 
-These are things you need to install the software and how to install them:
+These are a few things you will need to install for this program to run correctly
 
 
 1.) Install NodeJS
 2.) Run 'npm install' from local git directory
 3.) Run the file by command 'node index.js'
 4.) Install npm inquirer
-5
+
 
 * **Letter.js**: Contains a constructor, Letter. This constructor will display an underlying character or a blank placeholder (such as an underscore), depending on whether or not the user has guessed the letter. 
 
